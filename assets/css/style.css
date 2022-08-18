@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body 
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.bgimg 
+{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.header 
+{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 200, 190);
+}
+
+.logo 
+{
+    height: 20vh;
+    padding: 0 3em;
+}
+
+.nav_links 
+{
+    color: aliceblue;
+    width: 29vw;
+}
+
+div.nav_links a
+{
+    font-weight: bold;
+    font-size: 17px;
+    padding:0 1vw;
+}
+div.nav__links a:last-child
+{
+    padding: 10px;
+    border: 2px white solid ;
+}
+
+.home
+{
+    display: flex;
+    background-color:rgb(222,222,222);
+    height: 40vh;
+    margin: 40px;
+    padding: 20px;
+    border-radius:20px;   
+}
+section.home h1
+{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins';  
+    font-weight: bolder;  
+}
+section.home p
+{
+
+    font-size: 18px;
+    font-family: 'Poppins';
+      
+}
+
+.homeLeft
+{
+    font-size: medium;
+    width: fit-content;
+    width: 50vw;
+}
+.homeRight
+{
+    width: 50vw;
+    padding-left: 10vw;
+}
+.homeRight img
+{
+    border-radius: 20px;
+    height:300px;
+    width:500px;
+}
+
+
+
+.excut
+{
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    margin: 100px;
+    padding: 92px 150px 0px;  
+    border-radius:20px;     
+}
+
+.card
+{
+    display: block;
+    width:17vw;
+    height: 50vh;
+    background-color:rgb(222, 222, 222);
+    border-radius:20px; 
+    margin-bottom:77px
+}
+
+section.excut div.card:nth-child(even)
+{
+    align-self: flex-end;
+}
+
+div.card img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+}
+div.card p
+{
+    margin: 20px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight:bolder;
+    text-align: center;
+    
+}
+
+.qoute
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder;
+    margin-top: 100px;
+    text-align: center;
+}
