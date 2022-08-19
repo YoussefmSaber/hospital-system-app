@@ -11,7 +11,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: linear-gradient(90deg, #4A6FA5, #C0D6DF);
 }
 
 .container{
@@ -34,7 +34,7 @@ body {
     bottom: 0;
     height: 3px;
     width: 30px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: linear-gradient(90deg, #4A6FA5, #C0D6DF);
 }
 
 .user-details{
@@ -69,7 +69,7 @@ body {
 
 .input-box input:focus,
 .input-box input:valid{
-    border-color: #9b59b6;
+    border-color: #4A6FA5;
 }
 
 .gender-title{
@@ -89,7 +89,7 @@ body {
 }
 
 .category input{
-    accent-color: #9b59b6;
+    accent-color: #C0D6DF;
 }
 
 .faculty-title{
@@ -127,11 +127,11 @@ select{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: linear-gradient(90deg, #4A6FA5, #C0D6DF);
 }
 
 .btn input:hover{
-    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    background: linear-gradient(-90deg, #4A6FA5, #C0D6DF);
     transition: all 0.3s ease;
 }
 
@@ -151,10 +151,10 @@ select{
 }
 
 .login a{
-    color: #9b59b6;
+    color: #4A6FA5;
     text-decoration:none;
 }
 
 .login a:active{
-    color: #71b7e6
+    color: #C0D6DF
 }
