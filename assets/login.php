@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/login.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="images/icon.png">
+    <title>Login</title>
 </head>
 <body>
     <div class="container">
-        <div class="img"><span><img src="assets/images/Hospital patient.gif" alt=""></span></div>
+        <div class="img"><span><img src="images/Hospital patient.gif" alt=""></span></div>
         <div class="right-side">
             <div class="title">Login</div>
             <div class="login-details">

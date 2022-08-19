@@ -10,7 +10,20 @@
 
 body 
 {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
+}
+
+.nav__container {
+    height: 10vh;
+}
+
+.nav__visible {
+    opacity: 0.8;
+    position: fixed;  
+}
+
+.nav__invisible {
+    opacity: 0;
 }
 
 .bgimg 
@@ -22,18 +35,28 @@ body
     -webkit-filter: blur(5px);
 }
 
-.header 
+.nav__container {
+    height: 10vh;
+}
+
+nav 
 {
-    height: 20vh;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(55, 200, 190);
+    background: linear-gradient(-163deg, rgba(74, 111, 165, 1) 24%, rgba(192, 214, 223, 1) 100%);
+    position: absolute;
+    z-index: 1;
+    transition: opacity 300ms linear;
 }
+
 
 .logo 
 {
-    height: 20vh;
+    height: 15vh;
     padding: 0 3em;
 }
 
@@ -46,9 +69,24 @@ body
 div.nav_links a
 {
     font-weight: bold;
+    text-decoration: none;
     font-size: 17px;
+    color: aliceblue;
     padding:0 1vw;
+    cursor: pointer;
+    transition: color 300ms linear;
 }
+div.nav_links a:hover,
+div.nav_links a:focus
+{
+    color: #C0D6DF;
+}
+
+div.nav_links a:focus {
+    outline: none;
+}
+
+
 div.nav__links a:last-child
 {
     padding: 10px;
@@ -58,9 +96,9 @@ div.nav__links a:last-child
 .home
 {
     display: flex;
-    background-color:rgb(222,222,222);
+    background-color:#C0D6DF;
     height: 40vh;
-    margin: 40px;
+    margin:150px 40px 40px;
     padding: 20px;
     border-radius:20px;   
 }
@@ -97,33 +135,50 @@ section.home p
     width:500px;
 }
 
-
-
 .excut
 {
-    display: flex;
-    flex-direction: column;
     height: 200vh;
     margin: 100px;
     padding: 92px 150px 0px;  
     border-radius:20px;     
 }
+.teams-title {
+    text-align: center;
+    color: #6C758F;
+    padding-bottom: 40px;
+    font-size: 2em;
+    font-family: 'Poppins', cursive;
+    font-weight: bolder;    
+}
 
+.marwa
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.mimg
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+}
 .card
 {
     display: block;
-    width:17vw;
-    height: 50vh;
+    width:15vw;
+    height: 45vh;
     background-color:rgb(222, 222, 222);
-    border-radius:20px; 
-    margin-bottom:77px
+    border-radius:20px;
+    margin:5px 10px 77px;
 }
 
-section.excut div.card:nth-child(even)
+.card:nth-child(odd)
 {
     align-self: flex-end;
 }
-
 div.card img
 {
     display: block;
@@ -140,14 +195,31 @@ div.card p
     font-family: 'Poppins';
     text-transform: uppercase;
     font-weight:bolder;
-    text-align: center;
-    
+    text-align: center;    
 }
-
+.sci
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.sci a 
+{    
+    text-decoration: none;
+    color: #6c758f;
+    font-size: 30px;
+    margin: 10px;
+    transition: color 0.4s;
+}
+.sci a:hover 
+{
+    color: #0196e3;
+}
 .qoute
 {
     font-family: 'Times New Roman', Times, serif;
     font-weight:bolder;
-    margin-top: 100px;
+    margin-top: 20px;
     text-align: center;
 }
