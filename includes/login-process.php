@@ -9,7 +9,7 @@
 
         if(mysqli_num_rows($result) == 1)
         {
-            header('location: home.php');
+            header('location: index.php');
             exit();
         }
         echo '<p style="color: red">Enter correct data</p>';

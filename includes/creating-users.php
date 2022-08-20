@@ -22,7 +22,7 @@
                 {
                     $sql = "INSERT INTO users (name, username, password, email, gender, faculty, phonenumber) VALUES ('$name', '$username' , '$password', '$email', '$gender', '$faculty ', '$phoneNumber')";
                     $result = mysqli_query($conn, $sql);
-                    header('location: home.php');
+                    header('location: index.php');
                 }
             }
         }
