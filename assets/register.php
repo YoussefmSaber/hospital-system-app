@@ -20,32 +20,32 @@
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
-                        <input type="text" required>
+                        <input type="text" name="full-name" required>
                     </div>
                     
                     <div class="input-box">
                         <span class="details">Username</span>
-                        <input type="text" required>
+                        <input type="text" name="username" required>
                     </div>
                     
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="email" required>
+                        <input type="email" name="email" required>
                     </div>
                     
                     <div class="input-box">
                         <span class="details">Phone number</span>
-                        <input type="text" required>
+                        <input type="text" name="number" required>
                     </div>
                     
                     <div class="input-box">
                         <span class="details">Password</span>
-                        <input type="password" required>
+                        <input type="password" name="pass" required>
                     </div>
 
                     <div class="input-box">
                         <span class="details">Confirm Password</span>
-                        <input type="password" required>
+                        <input type="password" name="confPass" required>
                     </div>
                 </div>
 
@@ -54,15 +54,15 @@
                     <div class="category">
 
                         <label for="">
-                            <span class="dot one">
-                                <input type="radio" id="male" name="gender">
+                            <span>
+                                <input type="radio" id="male" name="gender" value="m" required>
                                 <span class="gender">Male</span>
                             </span>
                         </label>
 
                         <label for="">
-                            <span class="dot one">
-                                <input type="radio" id="female" name="gender">
+                            <span>
+                                <input type="radio" id="female" name="gender" value="f" required>
                                 <span class="gender">Female</span>
                             </span>
                         </label>
@@ -71,16 +71,16 @@
 
                 <div class="faculty-details">
                     <span class="faculty-title">Faculty</span>
-                    <select name="faculty" required>
+                    <select name="faculty">
                         <option value="none" selected disabled hidden>Select an Option</option>
-                        <option value="computerScience">Faculty of Computer and Informatics</option>
-                        <option value="Engineering">Faculty of Engineering</option>
-                        <option value="Commerce">Faculty of Commerce</option>
+                        <option value="computerScience" required>Faculty of Computer and Informatics</option>
+                        <option value="Engineering" required>Faculty of Engineering</option>
+                        <option value="Commerce" required>Faculty of Commerce</option>
                     </select>
                 </div>
 
                 <div class="btn">
-                    <input type="submit" value="Register">
+                    <input type="submit" value="Register" name="register">
                 </div>
             </form>
 
@@ -90,5 +90,9 @@
             </div>
         </div>
     </div>
+    <?php
+        require_once 'connection.php';
+        include 'creating-users.php';
+    ?>
 </body>
 </html>
