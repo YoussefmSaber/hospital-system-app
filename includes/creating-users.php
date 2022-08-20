@@ -10,9 +10,9 @@
             $gender      =  mysqli_real_escape_string($conn, $_POST['gender']);
             $faculty     =  mysqli_real_escape_string($conn, $_POST['faculty']);
             
-            if (!empty($name)    || !empty($username) || !empty($email)
-            || !empty($password) || !empty($confpass) || !empty($phoneNumber)
-            || !empty($gender)   || !empty($faculty))
+            if (!empty($name)    && !empty($username) && !empty($email)
+            && !empty($password) && !empty($confpass) && !empty($phoneNumber)
+            && !empty($gender)   && $faculty != "none")
             {
                 if ($confpass != $password)
                 {
@@ -20,9 +20,14 @@
                 }
                 else
                 {
-                    $sql = "INSERT INTO users (name, username, password, email, gender, faculty, phonenumber) VALUES ('$name', '$username' , '$password', '$email', '$gender', '$faculty ', '$phoneNumber')";
-                    $result = mysqli_query($conn, $sql);
-                    header('location: index.php');
+                    $verfyCode = rand(100000, 999999);
+                    $subject = "Email verification code";
+                    $message = "Your verification code is \n\n" . $verfyCode;
+                    $header = "From: youssef.mo.saber@gmail.com";
+                    
+                    mail($email, $subject, $message, $header);
+
+                    header('location: verify-signup.php');
                 }
             }
         }
