@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="icon" href="assets/images/icon.png">
     <title>Signup</title>
 </head>
 <body>
     <div class="container">
         <div class="img">
-            <img src="images/Queue.gif" alt="">
+            <img src="assets/images/Queue.gif" alt="">
         </div>
 
         <div class="right-side">
@@ -37,6 +37,11 @@
                         <span class="details">Phone number</span>
                         <input type="text" name="number" required>
                     </div>
+
+                    <?php
+                        require_once 'includes/connection.php';
+                        include 'includes/creating-users.php';
+                    ?>
                     
                     <div class="input-box">
                         <span class="details">Password</span>
@@ -90,9 +95,5 @@
             </div>
         </div>
     </div>
-    <?php
-        require_once 'connection.php';
-        include 'creating-users.php';
-    ?>
 </body>
 </html>
