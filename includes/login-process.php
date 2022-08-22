@@ -6,10 +6,14 @@
 
         $sql = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."' LIMIT 1";
         $result = mysqli_query($conn, $sql);
+        
 
         if(mysqli_num_rows($result) == 1)
         {
-            header('location: index.php');
+            session_start();
+            $_SESSION['globalUser'] = $username;
+            $_SESSION['globalPswd'] = $password;
+            header('location:dashboard-user.php');
             exit();
         }
         echo '<p style="color: red">Enter correct data</p>';
