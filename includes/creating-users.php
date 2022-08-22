@@ -20,14 +20,9 @@
                 }
                 else
                 {
-                    $verfyCode = rand(100000, 999999);
-                    $subject = "Email verification code";
-                    $message = "Your verification code is \n\n" . $verfyCode;
-                    $header = "From: youssef.mo.saber@gmail.com";
-                    
-                    mail($email, $subject, $message, $header);
-
-                    header('location: verify-signup.php');
+                    $sql = "INSERT INTO users (name, username, password, email, gender, faculty, phonenumber) VALUES ('$name', '$username' , '$password', '$email', '$gender', '$faculty ', '$phoneNumber')";
+                    $result = mysqli_query($conn, $sql);
+                    header('location: index.php');
                 }
             }
         }
