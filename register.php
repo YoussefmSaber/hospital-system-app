@@ -78,9 +78,9 @@
                     <span class="faculty-title">Faculty</span>
                     <select name="faculty">
                         <option value="none" selected disabled hidden>Select an Option</option>
-                        <option value="computerScience" required>Faculty of Computer and Informatics</option>
-                        <option value="Engineering" required>Faculty of Engineering</option>
-                        <option value="Commerce" required>Faculty of Commerce</option>
+                        <option value="Faculty of Computer and Informatics" required>Faculty of Computer and Informatics</option>
+                        <option value="Faculty of Engineering" required>Faculty of Engineering</option>
+                        <option value="Faculty of Commerce" required>Faculty of Commerce</option>
                     </select>
                 </div>
 

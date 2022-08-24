@@ -63,7 +63,7 @@ body {
 
 .input-box{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px)
+    width: calc(100% / 2 - 20px);
 }
 
 .input-box .details{
@@ -166,10 +166,6 @@ select:focus
 }
 .btn:hover::before {
     opacity: 1;
-}
-
-.btn input:active{
-    filter: grayscale(50%);
 }
 
 .foot{
