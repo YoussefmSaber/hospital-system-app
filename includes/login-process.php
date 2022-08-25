@@ -32,7 +32,6 @@
                     exit();
                 }
             }
-            
         }
         echo '<p style="color: red">Enter correct data</p>';
     }
