@@ -25,12 +25,12 @@ body {
     width: 100%;
     height: 100%;
     background: rgb(255, 255, 255);
-    padding: 25px 30px; 
+    padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 15px 15px 30px #4F6D7A;
 }
 
-.title{
+.title {
     font-size: 25px;
     font-weight: 500;
     text-align: center;
@@ -39,16 +39,15 @@ body {
 }
 
 .user-details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5em;
+    width: 50%;
 }
 
-.user-details p{
+.user-details p {
     color: #4F6D7A;
     height: 45px;
     width: 100%;
     outline: none;
+    text-align: left;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -112,4 +111,28 @@ textarea:focus {
 
 .btn:hover::before {
     opacity: 1;
+}
+
+.topContainer
+{
+    height: 100%;
+    width: 50%;
+}
+.downContainer{
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #C0D6DF;
+}
+table {
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 20px;
+}
+
+th,
+td {
+    border: 0px solid black;
+    border-radius: 20px;
+    padding: 20px;
 }

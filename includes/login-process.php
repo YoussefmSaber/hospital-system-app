@@ -20,7 +20,8 @@
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['faculty'] = $row['faculty'];
                 $_SESSION['phoneNumber'] = $row['phonenumber'];
-
+                $_SESSION['state'] = $row['state'];
+                
                 if ($row['state'] == "user")
                 {
                     header('location: dashboard-user.php');

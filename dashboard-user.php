@@ -16,6 +16,7 @@
             <div class="title">Welcome
                 <?php
                     echo $_SESSION['fullname'];
+                    echo ' ('.$_SESSION['state'].')';
                 ?>
             </div>
             <div>
