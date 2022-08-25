@@ -60,7 +60,7 @@
                 <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
-            <div class="qoute">"Food is Food."</div>
+            <div class="qoute">"Give us your money."</div>
         </div>
     
         <div class="card">
@@ -72,7 +72,7 @@
                 <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>       
-            <div class="qoute">"The Best Food your pocket could handle."</div>
+            <div class="qoute">"The Heatlthcare your pocket could handle."</div>
         </div>
     
         <div class="card">
@@ -84,8 +84,20 @@
                 <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
-        <div class="qoute">"Honstley idk wut to write this far"</div>
+        <div class="qoute">"We save lifes"</div>
     </div>
+    <div class="card">
+        <img src="assets/images/Big_chungus.jpg" alt="joe">
+        <p>muhammed eihab</p>
+        <p>ASSISTANT</p>
+        <div class="sci">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>       
+        <div class="qoute">"We help, we Attack,but most important we got ur back."</div>
+    </div>
+    
 
     </div>
 
