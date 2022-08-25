@@ -85,6 +85,47 @@
                 </div>
                 <div class="qoute">"Honstley idk wut to write this far"</div>
             </div>
+<<<<<<< HEAD
+=======
+            <div class="qoute">"Give us your money."</div>
+        </div>
+    
+        <div class="card">
+            <img src="assets/images/joe.jpg" alt="joe">
+            <p>youssef mohammed</p>
+            <p>Health Services Manager</p>
+            <div class="sci">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>       
+            <div class="qoute">"The Heatlthcare your pocket could handle."</div>
+        </div>
+    
+        <div class="card">
+            <img src="assets/images/mo.jpg" alt="mo">
+            <p>mohammed ibrahim</p>
+            <p>Healthcare Specialist</p>
+            <div class="sci">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="qoute">"We save lifes"</div>
+    </div>
+    <div class="card">
+        <img src="assets/images/Big_chungus.jpg" alt="joe">
+        <p>muhammed eihab</p>
+        <p>ASSISTANT</p>
+        <div class="sci">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>       
+        <div class="qoute">"We help, we Attack,but most important we got ur back."</div>
+    </div>
+    
+>>>>>>> af10767afdd000ce7aa641c5857f5ef571cdd9f7
 
             </div>
 
