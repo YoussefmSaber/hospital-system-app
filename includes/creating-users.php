@@ -1,4 +1,5 @@
 <?php
+    session_start();
     if(isset($_POST['register']))
         {
             $name        =  mysqli_real_escape_string($conn, $_POST['full-name']);
@@ -20,7 +21,8 @@
                 }
                 else
                 {
-                    $sql = "INSERT INTO users (name, username, password, email, gender, faculty, phonenumber) VALUES ('$name', '$username' , '$password', '$email', '$gender', '$faculty ', '$phoneNumber')";
+                    $sql = "INSERT INTO users (name, username, password, email, gender, faculty, phonenumber)
+                    VALUES ('$name', '$username' , '$password', '$email', '$gender', '$faculty ', '$phoneNumber')";
                     $result = mysqli_query($conn, $sql);
                     header('location: index.php');
                 }

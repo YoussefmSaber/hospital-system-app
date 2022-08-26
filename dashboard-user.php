@@ -56,13 +56,13 @@
                     </div>
                 </div>
                 <div class="form">
-                    <form method="post">
+                    <form action="includes/dashboard-user-script.php" method="post">
                         <div class="txt-field">
                             <textarea name="message" id="txtfield" cols="30" rows="10"></textarea>
                         </div>
                         <div class="btn-container">
                             <div class="btn">
-                                <input type="submit" value="Send" name="sent">
+                                <input type="submit" value="Send" name="send">
                             </div>
                         </div>
                     </form>
