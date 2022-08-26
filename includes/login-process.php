@@ -10,12 +10,7 @@
 
         if(mysqli_num_rows($result) == 1)
         {
-            $dbData = "SELECT * FROM users WHERE username = '".$username."'";
-            $res = mysqli_query($conn, $dbData);
-            
-            if (mysqli_num_rows($res) > 0)
-            {
-                $row = mysqli_fetch_assoc($res);
+                $row = mysqli_fetch_assoc($result);
                 $_SESSION['fullname'] = $row['name'];
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['faculty'] = $row['faculty'];
@@ -33,7 +28,7 @@
                     exit();
                 }
             }
-        }
+        
         echo '<p style="color: red">Enter correct data</p>';
     }
 ?>
