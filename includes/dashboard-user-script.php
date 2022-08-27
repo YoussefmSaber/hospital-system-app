@@ -9,8 +9,8 @@
         $faculty        =  mysqli_real_escape_string($conn, $_SESSION['faculty']);
         $message        =  mysqli_real_escape_string($conn, $_POST['message']);
 
-        $sql = "INSERT INTO patiants (name, email, phonenumber, description, faculty)
-        VALUES ('$name', '$email' , '$phoneNumber', '$message', '$faculty')";
+        $sql = "INSERT INTO patiants (name, email, phonenumber, description, faculty, requestState)
+        VALUES ('$name', '$email' , '$phoneNumber', '$message', '$faculty', 'waiting')";
         $result = mysqli_query($conn, $sql);
         echo "Works!";
     }

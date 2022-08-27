@@ -55,23 +55,35 @@
                             <?php
                                 $conn = new mysqli('localhost', 'root', '', 'hospital-system-app');
 
-                                $sql = "SELECT * FROM patiants where faculty = '".$_SESSION['faculty']."'";
+                                $sql = "SELECT * FROM patiants where requestState = 'waiting'
+                                        AND faculty = '".$_SESSION['faculty']."'";
                                 $result = $conn->query($sql);
 
                                 while($row = $result->fetch_assoc())
                                 {
-                                    echo"<tr>
-                                            <td>".$row["name"]."</td>
-                                            <td>".$row["email"]."</td>
-                                            <td>".$row["phonenumber"]."</td>
-                                            <td>".$row["faculty"]."</td>
-                                            <td>".$row["description"]."</td>
-                                            <td>
-                                                <a href='update'>Update</a>
-                                                <a href='delete'>Delete</a>
-                                            </td>
-                                        </tr>";
+                                    $pid = $row['id'];
+
+                                    echo"
+                                        <form method=\"post\" action = 'includes/dashboard-admin-script.php'>
+                                            <tr>
+                                                <td>".$row["name"]."<input type='text' name='pID' value='$pid' hidden></td>
+                                                <td>".$row["email"]."</td>
+                                                <td>".$row["phonenumber"]."</td>
+                                                <td>".$row["faculty"]."</td>
+                                                <td>".$row["description"]."</td>
+                                                <td>
+                                                    <input type=\"submit\" value=\"Aprove\" name=\"aprove\">
+                                                    <input type=\"submit\" value=\"Disaprove\" name=\"disaprove\">
+                                                </td>
+                                            </tr>
+                                        </form>"
+                                        ;
+                                        if(isset($_POST['aprove']))
+                                        {
+                                            $_SESSION['pID'] = $row['id'];
+                                        }
                                 }
+                                
                                 ?>
                         </tbody>
                     </table>
