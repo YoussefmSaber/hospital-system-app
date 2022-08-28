@@ -21,9 +21,8 @@ body {
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
-    max-height: 800px;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
@@ -93,7 +92,7 @@ body {
 
 .btn {
     height: 3em;
-    width: 25%;
+    width: 75%;
     position: relative;
     border: 1px solid #dddd;
     border-radius: 0.5em;

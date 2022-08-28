@@ -72,8 +72,8 @@
                                                 <td>".$row["faculty"]."</td>
                                                 <td>".$row["description"]."</td>
                                                 <td>
-                                                    <input type=\"submit\" value=\"Aprove\" name=\"aprove\">
-                                                    <input type=\"submit\" value=\"Disaprove\" name=\"disaprove\">
+                                                    <input class='btn' type=\"submit\" value=\"Approve\" name=\"approve\">
+                                                    <input class='btn' type=\"submit\" value=\"Disapprove\" name=\"disapprove\">
                                                 </td>
                                             </tr>
                                         </form>"
