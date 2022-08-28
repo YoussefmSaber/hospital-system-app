@@ -187,3 +187,7 @@ select:focus
 .login a:active{
     color: #C0D6DF
 }
+
+.not-match{
+    color: red;
+}

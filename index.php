@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="icon" href="assets/images/icon.png">
+        <link rel="stylesheet" href="assets/css/st3yle.css">
+        <link rel="icon" href="assets/images/icon.png"> 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +20,13 @@
                     <a href="#">HOME</a>
                     <a href="login.php">LOG IN</a>
                     <a href="register.php">SIGN UP</a>
-                    <a href="">CONTACT US</a>
                 </div> 
             </nav>
         </div>
-
+        
         <section class="home" id="home">     
             <div class="homeLeft">    
-                <h1>ABOUT SUEZ CANAL UNIVERSITY HOSPITAL</h1>  <br>   
+                <h1>ABOUT SUEZ CANAL UNIVERSITY HOSPITAL</h1>  <br>
                 <p>
                     A state-of-the art modern facility in the heart of the ismailia government, it is spread over 10 acres and has a built-up area
                     of over 440000 square feet. Currently the hospital has 300+ beds with a capacity to expand to 400 beds.

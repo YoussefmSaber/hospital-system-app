@@ -17,14 +17,14 @@
             {
                 if ($confpass != $password)
                 {
-                    echo '<p style="color: red">Passwords not match</p>';
+                    echo '<p style="color: red; position: absolute; padding-top: 11em; padding-left: 7em">Passwords not match</p>';
                 }
                 else
                 {
                     $sql = "INSERT INTO users (name, username, password, email, gender, faculty, phonenumber)
                     VALUES ('$name', '$username' , '$password', '$email', '$gender', '$faculty ', '$phoneNumber')";
                     $result = mysqli_query($conn, $sql);
-                    header('location: index.php');
+                    header('location: login.php');
                 }
             }
         }

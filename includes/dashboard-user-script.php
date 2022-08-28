@@ -2,7 +2,7 @@
     session_start();
     if (isset($_POST['send']))
     {
-        $conn           = mysqli_connect('localhost', 'root', '', 'hospital-system-app');
+        $conn           =  mysqli_connect('localhost', 'root', '', 'hospital-system-app');
         $name           =  mysqli_real_escape_string($conn, $_SESSION['fullname']);        
         $email          =  mysqli_real_escape_string($conn, $_SESSION['email']);
         $phoneNumber    =  mysqli_real_escape_string($conn, $_SESSION['phoneNumber']);
@@ -12,6 +12,6 @@
         $sql = "INSERT INTO patiants (name, email, phonenumber, description, faculty, requestState)
         VALUES ('$name', '$email' , '$phoneNumber', '$message', '$faculty', 'waiting')";
         $result = mysqli_query($conn, $sql);
-        echo "Works!";
+        header('Location: submite-succ.php');
     }
 ?>

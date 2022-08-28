@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/ad3mindashboard.css">
+    <link rel="stylesheet" href="assets/css/admindashboard.css">
     <link rel="icon" href="assets/images/icon.png">
     <title>Dashboard</title>
 </head>
@@ -16,8 +16,10 @@
         <div class="title">Welcome
             <?php
                 echo $_SESSION['fullname'];
-                echo ' ('.$_SESSION['state'].')';
             ?>
+        </div>
+        <div class="signout">
+            <a href="logout.php">signout</a>
         </div>
             <div>
                 <div class="user-details">
@@ -95,19 +97,3 @@
     <script src="assets/js/index.js"></script>
 </body>
 </html>
-
-
-<!--  
-        <div class='downContainer'>
-            <form action="" method="get">
-                <table id='tbl'>
-                    <tr>
-                        <th>Stuent</th>
-                        <th>E-mail</th>
-                        <th>Phone</th>
-                        <th>Description</th>
-                        <th>Action</th>
-                    </tr>
-                </table>
-            </form>    
-        </div>   -->

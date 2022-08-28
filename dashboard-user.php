@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/us1erdashboard.css">
+        <link rel="stylesheet" href="assets/css/userdashboard.css">
         <link rel="icon" href="assets/images/icon.png">
         <title>Dashboard</title>
     </head>
@@ -16,8 +16,10 @@
             <div class="title">Welcome
                 <?php
                     echo $_SESSION['fullname'];
-                    echo ' ('.$_SESSION['state'].')';
                 ?>
+            </div>
+            <div class="signout">
+                <a href="logout.php">signout</a>
             </div>
             <div>
                 <div class="user-details">
@@ -49,9 +51,10 @@
                     </div>
 
                     <div class="request-box">
-                        <p class="request">Your request state:
+                        <form action="requests.php" method="post">
+                            <input class="request" type="submit" name="request" value="Your request(s) state">
+                        </form>
                             <?php?>
-                        </p>
                         <br>
                     </div>
                 </div>

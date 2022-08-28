@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+    background-color: #fff;
+}
+
+.nav__container {
+    height: 10vh;
+}
+
+.nav__visible {
+    opacity: 0.8;
+    position: fixed;  
+}
+
+.nav__invisible {
+    opacity: 0;
+}
+
+.bgimg 
+{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.nav__container {
+    height: 10vh;
+}
+
+nav 
+{
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(-163deg, rgba(74, 111, 165, 1) 24%, rgba(192, 214, 223, 1) 100%);
+    position: absolute;
+    z-index: 1;
+    transition: opacity 300ms linear;
+}
+
+.logo 
+{
+    height: 15vh;
+    padding: 0 3em;
+}
+
+.nav_links 
+{
+    display: flex;
+    color: aliceblue;
+    width: 14vw;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+div.nav_links a
+{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: color 300ms linear;
+}
+
+div.nav_links a:hover,
+div.nav_links a:focus
+{
+    color: #C0D6DF;
+}
+
+div.nav_links a:focus {
+    outline: none;
+}
+
+
+div.nav__links a:last-child
+{
+    padding: 10px;
+    border: 2px white solid ;
+}
+
+.home
+{
+    display: flex;
+    background-color:#C0D6DF;
+    height: 40vh;
+    margin:150px 40px 40px;
+    padding: 20px;
+    border-radius:20px;   
+}
+section.home h1
+{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins';  
+    font-weight: bolder;  
+}
+section.home p
+{
+
+    font-size: 18px;
+    font-family: 'Poppins';
+      
+}
+
+.homeLeft
+{
+    font-size: medium;
+    width: fit-content;
+    width: 50vw;
+}
+.homeRight
+{
+    width: 50vw;
+    padding-left: 10vw;
+}
+.homeRight img
+{
+    border-radius: 20px;
+    height:300px;
+    width:500px;
+}
+
+.excut
+{
+    height: 200vh;
+    margin: 100px;
+    padding: 92px 150px 0px;  
+    border-radius:20px;     
+}
+.teams-title {
+    text-align: center;
+    color: #6C758F;
+    padding-bottom: 40px;
+    font-size: 2em;
+    font-family: 'Poppins', cursive;
+    font-weight: bolder;    
+}
+
+.marwa
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.mimg
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+}
+.card
+{
+    display: block;
+    width:15vw;
+    height: 45vh;
+    background-color:rgb(222, 222, 222);
+    border-radius:20px;
+    margin:5px 10px 77px;
+}
+
+.card:nth-child(odd)
+{
+    align-self: flex-end;
+}
+div.card img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+}
+div.card p
+{
+    margin: 20px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight:bolder;
+    text-align: center;    
+}
+.sci
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.sci a 
+{    
+    text-decoration: none;
+    color: #6c758f;
+    font-size: 30px;
+    margin: 10px;
+    transition: color 0.4s;
+}
+.sci a:hover 
+{
+    color: #0196e3;
+}
+.qoute
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder;
+    margin-top: 20px;
+    text-align: center;
+}
+

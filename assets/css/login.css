@@ -149,3 +149,9 @@ body {
 .login a:active {
     color: #C0D6DF
 }
+.req{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
